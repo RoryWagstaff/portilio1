@@ -1,0 +1,334 @@
+<html>
+<head>
+	<link href="avidmedia.css" rel="stylesheet" type="text/css">
+	 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+	<script> src="avidmedia.js"> </script>
+</head>
+<body>
+
+<div class="container">
+	<img src="arrow-left.png" height="60px" width="60px" id="left-arrow">
+	<img src="arrow-right.png" height="60px" width="60px" id="right-arrow">
+	
+          
+	<div class="background">
+		<img src="http://i.imgur.com/DiP2dFZ.jpg"  id="first" >
+		<img src="http://i.imgur.com/oX8t24R.jpg" class="active" >
+		<img src="https://i.redd.it/nf12ltzqfc2z.jpg" id="last">
+
+
+	</div>	
+	<div class="header">
+		<ul id="drop-down">
+			<li> <a href="" id="home"> HOME </a> </li>
+			<li> <a href=""> ABOUT US</a> </li>
+			<li> <a href=""> COMPANY</a> </li>
+			<li> <a href=""> CONTACT US</a> </li>
+			<li> <a href=""> PRIVACY POLICY</a> </li>
+		</ul>	
+
+	</div>	
+
+	<div class="logo">
+		<img src="avidmedia-logo.png" height="100px" width="100px" id="logoimage">
+
+	</div>	
+
+	<div class="main-text">
+		<h1 id="header1"> <span> Avid Media </span> The Native <br> Content Consultancy </h1>
+
+		<h2> Using Data to drive Curation, <br> Creation and Distrubtion </h2>
+	</div>	
+
+
+</div>
+
+<div class="second-container">
+	<div class="firstbox">
+
+
+
+	</div> 	
+
+	<div class="secondbox"> <!--NEED TO DO THE ID BOXES ON CSS-->
+		<div id="secondboxfirstbox">
+
+		</div>	
+		 <div id="secondboxsecondbox">
+
+		</div>	
+
+	<div>	
+
+	<!--
+<div class="secondHeader">
+	<h1 id="head"> Mission Statement </h1>
+</div>
+
+	<div class="box-logo">
+		<img src="avidmedia-logo.png" height="100px" width="100px" id="logo2">
+
+
+	</div>
+<div class="second-main">
+
+
+	<div class="picture-frame">
+
+		<img src="https://i.redd.it/qxv73j598aoz.jpg" height="100%" width="100%" id="first2" >
+		<img src="https://i.redd.it/1082syg9mioz.jpg" height="100%" width="100%"  class="active2" id="middle">
+		<img src="https://i.redd.it/skli950m8joz.jpg" height="100%" width="100%" id="last2">
+
+	</div>	
+
+	<div class="picture-text">
+		<h1> Fade In Gallery with Navigation </h1>
+
+</div>	
+
+
+	<div class="picture-frame2">
+		<img name="slide" height="100%" width="100%">
+
+	</div>	
+
+	<div class="picture-text2">
+		<h1> Automatic Slideshow </h1>
+
+</div>	
+	
+
+<img src="https://www.shareicon.net/data/512x512/2015/12/05/682928_arrows_512x512.png" height="40px" width="40px" id="right-clicker">
+<img src="https://image.flaticon.com/icons/svg/55/55158.svg" height="40px" width="40px" id="left-clicker">
+-->
+</div>
+
+
+
+<div class="footer">
+	<div class="footer-text">
+		<h1> rorywagstaff@gmail.com </h1>
+		<h2> 07469252116 </h2>
+
+	</div>	
+
+
+</div>	
+
+</div>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script> $(document).ready(function() {
+
+/*	$("#right-arrow").on("click",function (){
+
+  var currentImg = $(".active");
+  var nextImg = currentImg.next();
+
+  if (nextImg.length >=1) {
+  	currentImg.fadeOut((700),function(){
+  	currentImg.removeClass("active");
+  	nextImg.fadeIn((700),function(){
+    nextImg.addClass("active");
+    	})
+      });
+
+  } else {
+  	currentImg.fadeOut((700),function(){
+    currentImg.removeClass("active");
+    $("#first").fadeIn((700),function(){
+    $("#first").addClass("active");
+  })
+   })
+   }
+   }); 
+
+
+$("#left-arrow").on("click",function (){
+
+  var currentImg = $(".active");
+  var prevImg = currentImg.prev();
+
+  if (prevImg.length >= 1) {
+  	currentImg.fadeOut((700),function(){
+  	currentImg.removeClass("active");
+  	prevImg.fadeIn((700),function(){
+    prevImg.addClass("active");
+    	})
+      });
+
+  } else {
+  	currentImg.fadeOut((700),function(){
+  		currentImg.removeClass("active");
+  		$("#last").fadeIn((700),function(){
+  			$("#last").addClass("active");
+  		})
+  	})
+  }
+});	
+
+
+
+$("#right-clicker").on("click",function(){
+	var currentImage = $(".active2");
+	var nextImage = currentImage.next();
+
+	if (nextImage.length >= 1) {
+		currentImage.fadeOut((500),function(){
+			currentImage.removeClass("active2");
+			nextImage.fadeIn((500),function(){
+				nextImage.addClass("active2");
+			})
+		});
+	} else {
+
+		currentImage.fadeOut((500),function(){
+			currentImage.removeClass("active2");
+			$("#first2").fadeIn((500),function(){
+				$("#first2").addClass("active2");
+			})
+		})
+	}
+
+
+
+
+})
+
+
+$("#left-clicker").on("click",function(){
+	var currentImage = $(".active2");
+	var previousImage = currentImage.prev();
+
+	if (previousImage.length >= 1) {
+		currentImage.fadeOut((500),function(){
+			currentImage.removeClass("active2");
+			previousImage.fadeIn((500),function(){
+				previousImage.addClass("active2");
+			})
+		});
+	} else {
+
+		currentImage.fadeOut((500),function(){
+			currentImage.removeClass("active2");
+			$("#last2").fadeIn((500),function(){
+				$("#last2").addClass("active2");
+			})
+		})
+	}
+
+
+
+
+})
+
+
+ -->
+
+
+
+/*$("#logo2").on("mouseover",function(){
+	var logo = $("#logo2");
+
+	go();
+	function go(){
+		logo.animate({height:"120px"},(1000));
+		logo.animate({height:"100px"}, (1000), go);
+	}
+});
+*/
+
+
+/*$("#logo2").on("click",function(){
+	$("#logo2").animate({height: "320px", width: "320px"},(2000), function(){
+		$(".second-container").css("background-color", "yellow", "opacity", "0.3");
+	});
+});
+*/
+
+
+/*$("#logo2").on("click",function(){
+	$("#head").animate({fontSize: "50px"}, (1000),function (){
+		$(".second-container").animate({opacity: "0.3"}, (1000));
+	});
+});
+
+/*$("#head").on("click",function(){
+	$("#head").css("color","red").hide(2000).show(2000).css("color", "yellow");
+});
+
+*/
+
+
+
+
+/*$("#logo2").on("mouseenter",function(){
+	$(".secondHeader").show(1000);
+
+	$("#head").animate({fontSize: "30px"},"slow",function(){
+		$(".second-main").slideDown(2000);
+	});
+});
+
+
+$(".picture-frame2").on("mouseenter",function(){
+	$(".footer").fadeIn(3000);
+});
+*/
+
+$(window).on("scroll",function(){
+if($(document).scrollTop()> 400)
+{
+	$(".secondHeader").show(500);
+
+	$("#head").animate({fontSize: "30px"},"slow",function(){
+		$(".second-main").slideDown(1000);
+	})
+}
+});
+
+$(window).on("scroll",function(){
+	if($(document).scrollTop()> 1200) {
+		$(".footer").show(3000);
+
+	}
+});
+
+/*$(".picture-frame2").on("mouseenter",function(){
+	$(".footer").fadeIn(3000);
+});
+
+*/
+
+
+
+
+	});
+
+</script>
+<script>
+var i = 0;
+var slideImages = [];
+var time = 5000;
+
+
+slideImages [0] = "https://i.redd.it/qxv73j598aoz.jpg";
+slideImages [1] = "http://i.imgur.com/oX8t24R.jpg";
+slideImages [2] = "https://i.redd.it/skli950m8joz.jpg";
+
+function slideShow (){
+	document.slide.src = slideImages [i];
+
+	if (i < slideImages.length - 1) {
+		i++;
+	} else {
+		i = 0;
+	}
+	setTimeout("slideShow()", time);
+}
+
+
+window.onload = slideShow;
+</script>
+</body>
+</html>	
