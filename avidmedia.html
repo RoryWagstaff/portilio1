@@ -30,7 +30,7 @@
 	</div>	
 
 	<div class="logo">
-		<img src="avidmedia-logo.png" height="100px" width="100px" id="logoimage">
+		<img src="avidmediaicon.png" height="100px" width="100px" id="logoimage">
 
 	</div>	
 
@@ -135,16 +135,38 @@ By understanding how, what, when and where content is <br> being consumed, Avid 
 
 
 
+
+
+</div>
+
 <div class="footer">
+	<div class="footer-real">
+		<img src="avidmediaicon.png" height="50px" width="40px">
+
+	</div>	
 	
 
 
 </div>	
 
-</div>
-
 <script src="jquery-3.2.1.min.js"></script>
 <script> $(document).ready(function() {
+
+$(window).on("scroll",function(){
+if($(document).scrollTop()> 1000)
+{
+	
+
+	$("#logoimage").css("height", "30px");
+	$("#logoimage").css("width", "30px");
+} else {
+	$("#logoimage").css("height", "100px");
+	$("#logoimage").css("width", "100px");
+
+}
+});
+
+});
 
 /*	$("#right-arrow").on("click",function (){
 
@@ -302,23 +324,9 @@ $(".picture-frame2").on("mouseenter",function(){
 });
 */
 
-$(window).on("scroll",function(){
-if($(document).scrollTop()> 400)
-{
-	$(".secondHeader").show(500);
 
-	$("#head").animate({fontSize: "30px"},"slow",function(){
-		$(".second-main").slideDown(1000);
-	})
-}
-});
 
-$(window).on("scroll",function(){
-	if($(document).scrollTop()> 1200) {
-		$(".footer").show(3000);
 
-	}
-});
 
 /*$(".picture-frame2").on("mouseenter",function(){
 	$(".footer").fadeIn(3000);
@@ -329,7 +337,7 @@ $(window).on("scroll",function(){
 
 
 
-	});
+	
 
 </script>
 <script>
