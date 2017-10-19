@@ -4,9 +4,10 @@
 }
 
 .container1 {
-	height: 900px;
-	width: 100%;
+	height: 1000px;
+	width: 1920px;
 	background: #efefef;
+	position: relative;
 
 }
 
@@ -54,7 +55,7 @@ ul li a:hover {
 	display: block;
 	margin: auto;
 	position: relative;
-	top:260px;
+	top:360px;
 	right:280px;
 }
 
@@ -63,7 +64,7 @@ ul li a:hover {
 	float: right;
 	margin-right: 400px;
 	position: relative;
-	bottom:400px;
+	bottom:300px;
 	font-family: 'Raleway', sans-serif;
     font-weight: 300;
     color: #000000;
@@ -85,6 +86,330 @@ ul li a:hover {
 .container-one-text p {
 	margin-top: 30px;
 	font-size:18px;
+	margin-bottom: 50px;
 
 }
+
+#linkedinlogo:hover {
+	background:#b23d64;
+}
+
+/*
+
+CONTAINER TWO 
+
+*/
+
+
+
+.container2 {
+	height:1200px;
+	width: 100%;
+	position: absolute;	
+	display: grid;
+	grid-template-rows:1fr;
+	grid-template-columns:22.5% 55% 22.5%;
+
+}
+
+.container2-content {
+	grid-row:1;
+	grid-column:2/3;
+	display: grid;
+	grid-template-rows:20% 75% 5%;
+	position: relative;
+}
+
+#container2-header {
+	grid-row:1/2;
+	color: black;
+	text-align: center;
+	padding-top: 70px;
+	font-family: 'raleway',sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.photo-grid {
+	grid-row:2/3;
+	display: grid;
+	grid-template-rows:40% 5% 40% 5%;
+	grid-template-columns:25% 12.5% 25% 12.5% 25%;
+}
+
+#photo1 {
+	grid-row:1/2;
+	grid-column:1/2;
+	
+	background: url(profilepicture1.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.photo1inner {
+	background:rgba(178, 61, 100,1);
+	opacity: 0.7;
+	height: 100%;
+	width: 100%;
+	visibility: hidden;
+	font-family: 'raleway', sans-serif;
+	color: white;
+	text-align: center;
+	line-height: 1.4;
+}
+
+#linkedinprofilepic {
+	padding-top: 10px;
+}
+
+.photo1inner h1 {
+	padding-top: 220px;
+}
+
+#photo1:hover > .photo1inner {
+	visibility: visible;
+}
+
+#photo2:hover> .photo1inner {
+	visibility: visible;
+}
+#photo3:hover> .photo1inner {
+	visibility: visible;
+}
+#photo4:hover> .photo1inner {
+	visibility: visible;
+}
+#photo5:hover> .photo1inner {
+	visibility: visible;
+}
+#photo6:hover> .photo1inner {
+	visibility: visible;
+}
+	
+#photo2 {
+	grid-row:1/2;
+	grid-column:3/4;
+
+	background: url(profilepicture2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#photo3 {
+	grid-row:1/2;
+	grid-column:5/6;
+
+	background: url(profilepicture3.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#photo4 {
+	grid-row:3/4;
+	grid-column:1/2;
+	
+	background: url(profilepicture4.jpg) no-repeat center;
+	background-size: cover;
+}
+	
+#photo5 {
+	grid-row:3/4;
+	grid-column:3/4;
+	
+	background: url(profilepicture5.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#photo6 {
+	grid-row:3/4;
+	grid-column:5/6;
+	
+	background: url(profilepicture6.jpg) no-repeat center;
+	background-size: cover;
+}
+
+/*  Container 3 */
+/*  Container 3 */
+/*  Container 3 */
+/*  Container 3 */
+
+.container3 {
+	height:400px;
+	width: 1920px;
+	background: #efefef;
+	position: relative;
+	top:1200px;
+	display: grid;
+	grid-template-columns:39.5% 7% 7% 7% 39.5%;
+	grid-template-rows:1fr 1fr 1fr;
+
+}
+
+#container3header {
+	
+	font-family: 'raleway', sans-serif;
+	font-size: 24.5px;
+	padding-top: 70px;
+	grid-row:1/2;
+	grid-column:3/4;
+
+}
+
+#container3secondheader {
+	font-family: 'raleway', sans-serif;
+	font-size: 26.5px;
+	padding-top: 60px;
+	grid-row:3/4;
+	grid-column:2/5;
+	padding-left: 15px;
+
+	
+	
+
+
+}
+
+#email-logo {
+	grid-row:2/3;
+	grid-column:2/3;
+	border:3px solid black;
+	height:80px;
+	width: 80px;
+	border-radius: 100px;
+	margin-top: 40px;
+	position: relative;
+	background: url(emailogo1.png);
+	background-size: cover;
+
+}
+
+.email-hover {
+	height: 15px;
+	width: 170px;
+	color: white;
+	font-family: 'raleway', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	background: black;
+	position: absolute;
+	top: -25px;
+	left: -50px;
+	visibility: hidden;
+
+	
+}
+
+#email-logo:hover > .email-hover {
+	visibility: visible;
+}
+
+#phone-logo {
+	
+	grid-column:3/4;
+	grid-row:2/3;
+	
+	border:3px solid black;
+	height:80px;
+	width: 80px;
+	border-radius: 100px;
+	margin-top: 40px;
+	position: relative;
+	background: url(phonelogo.png);
+	background-size: cover;
+	
+}
+
+.phone-hover {
+	height: 15px;
+	width: 170px;
+	color: white;
+	font-family: 'raleway', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	background: black;
+	position: absolute;
+	top: -25px;
+	left: -50px;
+	visibility: hidden;
+	
+
+	
+}
+
+#phone-logo:hover > .phone-hover {
+	visibility: visible;
+}
+
+#twitter-logo {
+	
+	grid-row:2/3;
+	grid-column:4/5;
+	border:3px solid black;
+	height:80px;
+	width: 80px;
+	border-radius: 100px;
+	margin-top: 40px;
+	position: relative;
+	background: url(twitterlogo.png) no-repeat;
+	background-size: cover;
+	
+}
+
+.twitter-hover {
+	height: 15px;
+	width: 170px;
+	color: white;
+	font-family: 'raleway', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	background: black;
+	position: absolute;
+	top: -25px;
+	left: -50px;
+	visibility: hidden;
+}
+
+#twitter-logo:hover > .twitter-hover {
+	visibility: visible;
+}
+
+
+/* Map */ 
+/* Map */ 
+/* Map */ 
+/* Map */ 
+
+#map {
+	height:500px;
+	width: 1920px;
+	background-color: red;
+	position: relative;
+	top:1200px;
+}
+
+/* Footer */
+/* Footer */
+/* Footer */
+
+
+.footer {
+		height:60px;
+	width: 1920px;
+background: #444444;
+position: relative;
+top:1200px;
+}
+
+.footer img {
+	padding-top: 10px;
+	margin-left: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
